@@ -1,0 +1,202 @@
+* {
+	border: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border-radius: 0;
+	list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: Mulish;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input {
+    outline: none;
+}
+
+header {
+    height: 150px;
+    position: relative;
+    display: flex;
+}
+
+.logo_github {
+    display: flex;
+    font-size: 70px;
+    font-family: 'Montserrat';
+    position: absolute;
+    top: 250px;
+    left: calc(50% - 240.22px);
+    width: fit-content;
+    margin: 0 auto;
+    animation: spin 2s forwards;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    transition: 2s;
+}
+
+@keyframes spin {
+    from {
+        transform: translateY();
+    }
+    to {
+        transform: translateY(-100px);
+    }
+}
+
+#search_bar {
+    display: flex;
+    border-radius: 25px;
+    background-color: rgb(196, 196, 196);
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    opacity: 0;
+    padding: 10px;
+    padding-right: 15px;
+    animation: showBar 1s forwards;
+    animation-delay: 1.5s;
+}
+
+#search_bar-input {
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(196, 196, 196);
+    margin-right: 5px;
+    appearance: none;
+}
+
+.search_icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+@keyframes showBar{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.user_profile {
+    display: none;
+    transform: 1s;
+}
+
+.user_info-wrapper {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.user_info {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#avatar_url {
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    margin-bottom: 20px;
+}
+
+#name {
+    margin-bottom: 7px;
+}
+
+#login {
+    color: rgb(112, 112, 112);
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#bio {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.semi_title {
+    font-weight: 600;
+}
+
+.little_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.x_link {
+    width: 30px;
+    height: 30px;
+}
+
+.github_logo {
+    width: auto;
+    height: 30px;
+}
+
+.user_repositories {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.repository {
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+    padding: 20px 30px;
+    border-radius: 30px;
+}
+
+.repository:hover {
+    background-color: rgb(205, 205, 205);
+}
+
+.view-all-button {
+    background-color: rgb(236, 236, 236);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.view-all-button:hover {
+    background-color:rgb(205, 205, 205);
+}

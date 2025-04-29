@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Calistoga&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>GitHUb Finder</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo_github"><p>GitHubFinder</p></div>
+        <div id="search_bar">
+            <input type="text" id="search_bar-input">
+            <img src="./assets/imgs/search_icon.png" class="search_icon">
+        </div>
+    </header>
+    <section class="user_profile">
+        <div class="user_info-wrapper">
+            <div class="user_info">
+                <img src="" alt="profile pic" id="avatar_url" class="userInfo">
+                <h1 id="name" class="userInfo"></h1>
+                <h2 id="login" class="userInfo"></h2>
+                <div class="socials">
+                    <a href="#" id="git_button"><img src="./assets/imgs/github_icon.png" alt="" class="github_logo"></a>
+                    <div>
+                        <a href="#" id="twitter_username" class="userInfo"></a>
+                    </div>
+                    <div>
+                        <a href="#" id="email" class="userInfo"></a>
+                    </div>
+                </div>
+                <p id="bio" class="userInfo"></p>
+                <div class="little_box">
+                    <p class="semi_title">Location</p>
+                    <p id="location" class="userInfo"></p>
+                </div>
+                <div class="little_box">
+                    <p class="semi_title">Company</p>
+                    <p id="company" class="userInfo"></p>
+                </div>
+                <div class="little_box">
+                    <p class="semi_title">E-mail</p>
+                    <p id="email" class="userInfo"></p>
+                </div>
+                <div class="little_box">
+                    <p class="semi_title">Blog</p>
+                    <a id="blog" class="userInfo"></a>
+                </div>
+                <div class="little_box">
+                    <p class="semi_title">Created at</p>
+                    <p id="created_at" class="userInfo"></p>
+                </div>
+                
+            </div>
+            <div class="user_repositories">
+                <h1>Repositories</h1>
+            </div>
+        </div>
+         
+    </section>
+    <script src="./assets/javascript/script.js"></script>
+</body>
+</html>
