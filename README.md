@@ -41,7 +41,7 @@ To run this project locally:
 
 * Clone the repository:
 * bash
-* git clone https://github.com/your-username/github-finder.git
+* git clone https://github.com/gabrielfabiao/github-finder.git
 * Open the project folder
 * Open index.html in your browser
 (No dependencies or build steps required as this is pure vanilla JS)
